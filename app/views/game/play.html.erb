@@ -3,10 +3,17 @@
   <hr/>
   <p>Please select your play
 
+
   <%= form_tag root_path, :method=> :get do %>
-    <%= select_tag "human", options_for_select(["rock","paper","scissors"]) %>
+    <%= label :human_rock, 'Rock' %>
+    <%= radio_button_tag 'human', 'rock', :checked => true %>
+    <%= label :human_paper, 'Paper' %>
+    <%= radio_button_tag 'human', 'paper' %>
+    <%= label :human_scissors, 'Scissors' %>
+    <%= radio_button_tag 'human', 'scissors' %><br/>
     <input type="submit" value="submit"/>
   <% end %>
+
   </p>
 
   <hr/>
