@@ -1,18 +1,20 @@
-<h1>Hi! Welcome to Rock, Paper, Scissors Game</h1>
-<hr/>
-<p>Please select your play
+<div class="body">
+  <h1>Hi! Welcome to Rock, Paper, Scissors Game</h1>
+  <hr/>
+  <p>Please select your play
 
-<%= form_tag root_path, :method=> :get do %>
-  <%= select_tag "human", options_for_select(["rock","paper","scissors"]) %>
-  <input type="submit" value="submit"/>
-<% end %>
-</p>
+  <%= form_tag root_path, :method=> :get do %>
+    <%= select_tag "human", options_for_select(["rock","paper","scissors"]) %>
+    <input type="submit" value="submit"/>
+  <% end %>
+  </p>
 
-<hr/>
-<% if !params[:human].nil? %>
-You were <%=  @human %>.
-Computer was <%= @computer %><br/>
-<%= @result %><br/>
-<% else %>
-Waiting your decision.
-<% end %>
+  <hr/>
+  <% if !params[:human].nil? %>
+  You were <%=  @human.upcase %>.<br/>
+  Computer was <%= @computer.upcase %>.<br/><br/>
+  <%= @result %><br/>
+  <% else %>
+  Waiting your decision.
+  <% end %>
+</div>

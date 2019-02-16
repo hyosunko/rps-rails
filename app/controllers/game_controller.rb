@@ -10,11 +10,11 @@ class GameController < ApplicationController
 			@result = "You entered wrong word. Please enter again"
 		else
 			if @human == @computer
-				@result = "Tied"
+				@result = "The game was tied"
 			elsif human_winners[@human] == @computer
-				@result ="You won"
+				@result ="You won the game"
 			else
-				@result ="You lost"
+				@result ="You lost the game"
 			end
 		end
 

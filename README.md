@@ -1,24 +1,10 @@
-# README
+# Ruby on Rails Rock, Paper, Scissors Game
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+Simple Rock, Paper, Scissors Game using Ruby on Rails and deployed through Heroku
 
-* Ruby version
+## Live Demo
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<a href="https://rps-rails.herokuapp.com">
+<img src="https://github.com/hyosunko/hyosunko.github.io/blob/master/img/rps-rails.PNG" width="400"></a>
